@@ -1,23 +1,24 @@
-- do netflix clone w/ omdbapi
-- can first clone w/ html css js
-- then convert repo to react
-  - spa
-  - node - demo running simple js file
-  - npm
-  - libraries/packages
+imgs - bc they're not in dist folder (need file loader)
 
+- x - do netflix clone w/ omdbapi
+- x - can first clone w/ html css js
+- x - then convert repo to react
+  - x - setup
+    - x - babel
+    - x - webpack
+  - x - syntax - jsx
+  - x - node - demo running simple js file
+  - x - npm
+  - x - libraries/packages
 - why react
-- setup
-  - babel
-  - webpack
-- syntax - jsx
-- virtual dom
+  - spa
+  - virtual dom
 - make a layout
-  - first put all html in <App/>
-  - then separate out into components (with props)
+  - x - first put all html in <App/>
+  - x - then separate out into components (with props)
   - then make interactive (with state, etc)
     - netflix - my list
-- props
+- x - props
 - state / lifecycle / hooks
 - debug chrome devtool
 

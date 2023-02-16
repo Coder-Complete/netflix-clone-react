@@ -1,7 +1,20 @@
+import "./style.css";
+
+import Header from "./Header.js";
+import MovieRow from "./MovieRow.js";
 import React from "react";
 
 const App = () => {
-  return <h1>Hello world! I am using React</h1>;
+  return (
+    <div>
+      <Header />
+      <main>
+        <MovieRow title={"Released in the Past Year"} />
+        <MovieRow title={"Trending Now"} />
+        <MovieRow title={"My List"} />
+      </main>
+    </div>
+  );
 };
 
 export default App;

@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+i {
+  color: white;
+  padding: 10px;
+}
+
+h1 {
+  display: inline-block;
+  padding: 10px;
+}
+
+span {
+  color: white;
+  padding: 10px;
+}
+
+header {
+  padding: 20px;
+  background-image: url("http://occ-0-1413-1412.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABZRzrdrgF5Z59V8FJFAzWG-s7kX-OqTS1dnLAIch8Sm2ySruAH88YefXwgrUwEiQItFNPAh0Dz3rYhGThz1X3DGAuhq8wSCTXQgP.jpg?r=4a0");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  position: relative;
+}
+
+.header__top-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.red {
+  color: red;
+}
+
+.gray {
+  color: gray;
+}
+
+button {
+  color: black;
+  padding: 15px;
+  border: none;
+  margin: 10px;
+}
+
+.gray-button {
+  background-color: gray;
+  color: white;
+}
+
+.header-main__left-section {
+  width: 40%;
+}
+
+.row {
+  margin: 10px;
+}
+
+.images-container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 100%;
+  /* width: auto; */
+  margin: 5px;
+}
