@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header>
       <div className="header__top-row">
@@ -32,7 +32,12 @@ const Header = () => {
             voluptatem eligendi impedit?
           </p>
           <button>Play</button>
-          <button className="gray-button">More Info</button>
+          <button
+            onClick={() => props.setOpenModal(true)}
+            className="gray-button"
+          >
+            More Info
+          </button>
         </div>
       </div>
     </header>

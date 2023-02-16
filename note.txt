@@ -1,5 +1,3 @@
-imgs - bc they're not in dist folder (need file loader)
-
 - x - do netflix clone w/ omdbapi
 - x - can first clone w/ html css js
 - x - then convert repo to react
@@ -10,9 +8,7 @@ imgs - bc they're not in dist folder (need file loader)
   - x - node - demo running simple js file
   - x - npm
   - x - libraries/packages
-- why react
-  - spa
-  - virtual dom
+
 - make a layout
   - x - first put all html in <App/>
   - x - then separate out into components (with props)
@@ -20,12 +16,24 @@ imgs - bc they're not in dist folder (need file loader)
     - netflix - my list
 - x - props
 - state / lifecycle / hooks
+  - https://reactjs.org/docs/hooks-reference.html
+  - x - useState
+    - x - first make simple counter project
+    - x - then do modal for more info on main video
+  - useEffect - data
+  - useContext - data?
+  - useReducer
+  - useCallback
+  - useMemo
+  - useRef
+  - custom hook
 - debug chrome devtool
 
-- redux (vs. useContext)
-
 - SPA
+- virtual dom
 - routing
+
+- redux (vs. useContext)
 
 
 make header background image responsive

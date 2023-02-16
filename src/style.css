@@ -9,7 +9,6 @@ body {
 }
 
 i {
-  color: white;
   padding: 10px;
 }
 
@@ -19,7 +18,6 @@ h1 {
 }
 
 span {
-  color: white;
   padding: 10px;
 }
 
@@ -54,7 +52,6 @@ button {
 
 .gray-button {
   background-color: gray;
-  color: white;
 }
 
 .header-main__left-section {
@@ -75,4 +72,16 @@ img {
   height: 100%;
   /* width: auto; */
   margin: 5px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  width: 90%;
+  height: 90%;
+  background-color: black;
+  padding: 20px;
 }
