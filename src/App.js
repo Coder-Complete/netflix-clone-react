@@ -6,6 +6,7 @@ import Counter from "./Counter.js";
 import Header from "./Header.js";
 import Modal from "./Modal.js";
 import MovieRow from "./MovieRow.js";
+import TestOutUseEffect from "./TestOutUseEffect";
 import TryMapInComponent from "./TryMapInComponent";
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
       <Header setOpenModal={setOpenModal} />
       <main>
         {openModal ? <Modal setOpenModal={setOpenModal} /> : null}
+        <TestOutUseEffect />
         <Counter />
         <TryMapInComponent listOfNums={[55, 32, 443, 54, 25, 6]} />
         {rowData.map((rowDataObject, index) => (
