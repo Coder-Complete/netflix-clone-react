@@ -1,3 +1,5 @@
+next: useEffect in more detail
+
 - x - do netflix clone w/ omdbapi
 - x - can first clone w/ html css js
 - x - then convert repo to react

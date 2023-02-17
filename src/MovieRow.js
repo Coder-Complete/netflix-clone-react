@@ -1,16 +1,19 @@
 import React from "react";
-import imgSrc from "./assets/movie.jpg";
 
 const MovieRow = (props) => {
+  const imgUrl = "https://image.tmdb.org/t/p/w500";
+
   return (
     <div className="row">
-      <h4>{props.title}</h4>
+      <h4>{props.data.name}</h4>
       <div className="images-container">
-        <img src={imgSrc} alt="" />
-        <img src={imgSrc} alt="" />
-        <img src={imgSrc} alt="" />
-        <img src={imgSrc} alt="" />
-        <img src={imgSrc} alt="" />
+        {props.data.items.map((movie) => (
+          <img
+            src={imgUrl + movie.poster_path}
+            alt={movie.name}
+            key={`${Math.random()}-${movie.id}`}
+          />
+        ))}
       </div>
     </div>
   );
