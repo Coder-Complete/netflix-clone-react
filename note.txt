@@ -1,5 +1,3 @@
-next: useEffect in more detail
-
 - x - do netflix clone w/ omdbapi
 - x - can first clone w/ html css js
 - x - then convert repo to react
@@ -17,12 +15,22 @@ next: useEffect in more detail
   - then make interactive (with state, etc)
     - netflix - my list
 - x - props
+
+0. add in setup stuff more info based on notes taken for t.b. regarding css and imgs and public folder etc
+1. get far w/ clone
+2. pause and talk about benefits of react in more detail
+3. more hooks
+4. routing
+5. auth now?
+6. redux - at least demo
+7. .env file?
+
 - state / lifecycle / hooks
   - https://reactjs.org/docs/hooks-reference.html
   - x - useState
     - x - first make simple counter project
     - x - then do modal for more info on main video
-  - useEffect - data
+  - x - useEffect - data
   - useContext - data?
   - useReducer
   - useCallback
@@ -30,9 +38,18 @@ next: useEffect in more detail
   - useRef
   - custom hook
 - debug chrome devtool
+  - react site? - shows tree
 
 - SPA
-- virtual dom
+- why react
+  - virtual dom
+    - vanilla js updates dom faster in general
+    - but if you're rerendering big part of page, react is better b/c it can do the diff ahead of time so will update a lot of stuff at once so ux is better
+  - with vanilla js you have to optimize your code to manage the dom (e.g. minimize dom traversals)
+    - with react you don't have to worry about that, just tell react how you want things to look and it'll make it work for you
+  - react makes it easy to couple UI with data
+  - DRY - prevents repetitive code
+  - easy transition to react native / flutter as well if you want to make mobile apps (would be harder to learn swift and have to learn a lang for android as well)
 - routing
 
 - redux (vs. useContext)
