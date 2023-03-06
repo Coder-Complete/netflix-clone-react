@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   color: white;
+  font-size: 14px;
 }
 
 body {
@@ -150,4 +151,34 @@ img {
   height: 90%;
   background-color: black;
   padding: 20px;
+}
+
+.movie-image {
+  margin: 0px 2px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  transform: all 5s ease 5s;
+}
+
+.movie-bottom {
+  background-color: black;
+  padding: 10px;
+}
+
+.movie-bottom__line {
+  white-space: nowrap;
+  padding: 5px 0px;
+}
+
+.movie-bottom__line span {
+  margin: 0px 3px;
+}
+
+.green {
+  color: green;
+}
+
+.border {
+  border: 1px solid white;
 }

@@ -4,7 +4,7 @@ function HeaderIcon({ component, tooltipContent }) {
   const [showTooltip, setShowTooltip] = useState(false);
   return (
     <div
-      onMouseEnter={() => setShowTooltip(true)}
+      onMouseOver={() => setShowTooltip(true)}
       onMouseLeave={() => setShowTooltip(false)}
       style={{ position: "relative" }}
       className="header-icon"
