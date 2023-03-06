@@ -158,7 +158,13 @@ img {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  transform: all 5s ease 5s;
+  transition: all 0.2s linear;
+}
+
+.movie-image:hover {
+  transform: scale(1.3);
+  transition: all 0.2s linear 0.5s;
+  z-index: 1;
 }
 
 .movie-bottom {
@@ -167,7 +173,6 @@ img {
 }
 
 .movie-bottom__line {
-  white-space: nowrap;
   padding: 5px 0px;
 }
 

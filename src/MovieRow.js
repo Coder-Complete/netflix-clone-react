@@ -7,8 +7,8 @@ const MovieRow = (props) => {
     <div className="row">
       <h4>{props.data.name}</h4>
       <div className="images-container">
-        {props.data.items.map((movie) => (
-          <MovieImage key={`${Math.random()}-${movie.id}`} data={movie} />
+        {props.data.items.slice(0, 5).map((movie, i) => (
+          <MovieImage key={movie.id} data={movie} />
         ))}
       </div>
     </div>

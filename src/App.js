@@ -37,7 +37,6 @@ const App = () => {
       });
     });
   }, []);
-
   return (
     <div className="app">
       <Header setOpenModal={setOpenModal} />
@@ -51,7 +50,11 @@ const App = () => {
         {/* <Counter /> */}
         {/* <TryMapInComponent listOfNums={[55, 32, 443, 54, 25, 6]} /> */}
         {rowData.map((rowDataObject, index) => (
-          <MovieRow key={rowDataObject.id} index={index} data={rowDataObject} />
+          <MovieRow
+            key={`row-${rowDataObject.id}`}
+            index={index}
+            data={rowDataObject}
+          />
         ))}
       </main>
     </div>

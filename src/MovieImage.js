@@ -5,7 +5,6 @@ function MovieImage({ data }) {
   const imgUrl = "https://image.tmdb.org/t/p/w500";
   return (
     <div
-      style={showDetails ? { transform: "scale(1.3)" } : {}}
       onMouseOver={() => setShowDetails(true)}
       onMouseLeave={() => setShowDetails(false)}
       className="movie-image"
@@ -30,7 +29,7 @@ function MovieImage({ data }) {
             </div>
             <div className="movie-bottom__line">
               {data.genre_ids.map((id) => (
-                <span>{id}</span>
+                <span key={Math.random()}>{id}</span>
               ))}
             </div>
           </div>
