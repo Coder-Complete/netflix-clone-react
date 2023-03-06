@@ -1,12 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function MovieImage({ data }) {
   const [showDetails, setShowDetails] = useState(false);
+  const [hovering, setHovering] = useState(false);
   const imgUrl = "https://image.tmdb.org/t/p/w500";
+
+  useEffect(() => {
+    let timeout;
+    if (hovering) {
+      timeout = setTimeout(() => setShowDetails(true), 500);
+    } else {
+      setTimeout(() => setShowDetails(false), 200);
+    }
+    return () => clearTimeout(timeout);
+  }, [hovering]);
+
   return (
     <div
-      onMouseOver={() => setShowDetails(true)}
-      onMouseLeave={() => setShowDetails(false)}
+      onMouseOver={() => {
+        setHovering(true);
+      }}
+      onMouseLeave={() => setHovering(false)}
       className="movie-image"
     >
       <img

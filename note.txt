@@ -20,9 +20,11 @@
 1. get far w/ clone
   - tooltips for nav bar
     - use react-icons instead of fontawesome - free libs wouldn't have all icons i wanted
+    - *challenge - do Browse dropdown
   - hover scales out and see more details
-  - scroll down and download more lists
-  - auto gen what movie is on big screen
+  - *challenge - get genres (/genre/movie/list) and render instead of genre id's
+  - *challenge - scroll down and download more lists
+  - *challenge - auto gen what movie is on big screen
 2. pause and talk about benefits of react in more detail
 3. more hooks
   - preface these with that useState and useEffect are pretty much all you really need, rest is either making code easier to manage or optimizing rendering
@@ -63,7 +65,8 @@
     - with react you don't have to worry about that, just tell react how you want things to look and it'll make it work for you
   - react makes it easy to couple UI with data
   - DRY - prevents repetitive code
-  - easy transition to react native / flutter as well if you want to make mobile apps (would be harder to learn swift and have to learn a lang for android as well)
+  - code organization - easier to debug
+  - easy transition to react native / flutter as well if you want to make multi-platform mobile apps (would be harder to learn swift and have to learn a lang for android as well)
 
 
 
