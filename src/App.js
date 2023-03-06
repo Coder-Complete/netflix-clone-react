@@ -42,7 +42,7 @@ const App = () => {
       <Header setOpenModal={setOpenModal} />
       <main>
         {openModal ? <Modal setOpenModal={setOpenModal} /> : null}
-        <TestOutUseEffect />
+        {/* <TestOutUseEffect /> */}
         <br />
         <br />
         <br />

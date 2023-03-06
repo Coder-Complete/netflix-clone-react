@@ -18,12 +18,29 @@
 
 0. add in setup stuff more info based on notes taken for t.b. regarding css and imgs and public folder etc
 1. get far w/ clone
+  - fontawesome setup for react
+    - https://fontawesome.com/v6/docs/web/use-with/react
+    - https://fontawesome.com/v6/docs/web/use-with/react/add-icons
+  - tooltips for nav bar
+  - hover scales out and see more details
+  - scroll down and download more lists
+  - auto gen what movie is on big screen
 2. pause and talk about benefits of react in more detail
 3. more hooks
-4. routing
-5. auth now?
+  - preface these with that useState and useEffect are pretty much all you really need, rest is either making code easier to manage or optimizing rendering
+    - useContext - hopefully will happen naturally
+    - useRef - input for search?
+    - create own hook - hopefully will happen naturally
+    - below probably won't happen - maybe sep into later vid
+      - useReducer - can eventually refactor complex state if happens
+      - useMemo - prbly wont use
+      - useCallback - prbly wont use
+4. routing & spa
+  - my list page
+5. auth now? no.
 6. redux - at least demo
-7. .env file?
+  - vs useContext
+7. .env file
 
 - state / lifecycle / hooks
   - https://reactjs.org/docs/hooks-reference.html
@@ -40,7 +57,6 @@
 - debug chrome devtool
   - react site? - shows tree
 
-- SPA
 - why react
   - virtual dom
     - vanilla js updates dom faster in general
@@ -50,9 +66,7 @@
   - react makes it easy to couple UI with data
   - DRY - prevents repetitive code
   - easy transition to react native / flutter as well if you want to make mobile apps (would be harder to learn swift and have to learn a lang for android as well)
-- routing
 
-- redux (vs. useContext)
 
 
 make header background image responsive

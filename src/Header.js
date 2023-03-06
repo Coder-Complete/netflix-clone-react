@@ -1,4 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+
+// <-- import styles to be used
 
 const Header = (props) => {
   return (
@@ -9,6 +13,7 @@ const Header = (props) => {
           <span>Browse</span>
         </div>
         <div>
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
           <i className="fa-solid fa-magnifying-glass"></i>
           <i className="fa-regular fa-bell"></i>
           {/* <img src="" alt="" /> */}
