@@ -36,6 +36,15 @@ header {
   margin-right: 20px;
 }
 
+.header__top-row--right img {
+  height: 30px;
+  border-radius: 6px;
+}
+
+.icon {
+  margin: 0px 10px;
+}
+
 .red {
   color: red;
 }

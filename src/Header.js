@@ -1,6 +1,8 @@
+import { faBell, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+
+import Avatar from "./assets/Netflix-avatar.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 // <-- import styles to be used
 
@@ -8,15 +10,14 @@ const Header = (props) => {
   return (
     <header>
       <div className="header__top-row">
-        <div>
+        <div className="header__top-row--left">
           <h1 className="red">Netflix</h1>
           <span>Browse</span>
         </div>
-        <div>
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
-          <i className="fa-solid fa-magnifying-glass"></i>
-          <i className="fa-regular fa-bell"></i>
-          {/* <img src="" alt="" /> */}
+        <div className="header__top-row--right">
+          <FontAwesomeIcon icon={faMagnifyingGlass} className="icon" />
+          <FontAwesomeIcon icon={faBell} className="icon" />
+          <img src={Avatar} alt="" className="icon" />
         </div>
       </div>
       <div className="header-main">
