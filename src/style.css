@@ -26,7 +26,8 @@ header {
   justify-content: space-between;
 }
 
-.header__top-row div {
+.header__top-row--left,
+.header__top-row--right {
   display: flex;
   align-items: center;
 }
@@ -43,6 +44,62 @@ header {
 
 .icon {
   margin: 0px 10px;
+}
+
+.tooltip {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  position: absolute;
+  top: 30px;
+  right: 20%;
+  /* transform: translateX(-50%); */
+  white-space: nowrap; /* this was key */
+  justify-content: flex-start;
+}
+
+.bell-tooltip {
+  display: flex;
+  padding: 15px;
+}
+
+.bell-tooltip div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.bell-tooltip img {
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.profile-tooltip {
+  padding-top: 10px;
+}
+
+.profile-tooltip__section {
+  padding: 5px 10px;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.profile-tooltip-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.profile-tooltip-row > :first-child {
+  margin-right: 5px;
+}
+
+.profile-tooltip__sign-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
 }
 
 .red {
@@ -81,7 +138,6 @@ button {
 img {
   height: 100%;
   /* width: auto; */
-  margin: 5px;
 }
 
 .modal {

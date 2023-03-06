@@ -3,7 +3,7 @@ import "./style.css";
 import React, { useEffect, useState } from "react";
 
 import Counter from "./Counter.js";
-import Header from "./Header.js";
+import Header from "./Header/Header.js";
 import Modal from "./Modal.js";
 import MovieRow from "./MovieRow.js";
 import TestOutUseEffect from "./TestOutUseEffect";

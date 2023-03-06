@@ -18,10 +18,8 @@
 
 0. add in setup stuff more info based on notes taken for t.b. regarding css and imgs and public folder etc
 1. get far w/ clone
-  - fontawesome setup for react
-    - https://fontawesome.com/v6/docs/web/use-with/react
-    - https://fontawesome.com/v6/docs/web/use-with/react/add-icons
   - tooltips for nav bar
+    - use react-icons instead of fontawesome - free libs wouldn't have all icons i wanted
   - hover scales out and see more details
   - scroll down and download more lists
   - auto gen what movie is on big screen

@@ -1,10 +1,10 @@
-import { faBell, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-
-import Avatar from "./assets/Netflix-avatar.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import BellTooltip from "./BellTooltip";
+import { FaRegBell } from "react-icons/fa";
+import { GoSearch } from "react-icons/go";
+import HeaderIcon from "./HeaderIcon";
+import ProfileTooltip from "./ProfileTooltip";
 import React from "react";
-
-// <-- import styles to be used
+import avatar from "../assets/Netflix-avatar.png";
 
 const Header = (props) => {
   return (
@@ -15,9 +15,15 @@ const Header = (props) => {
           <span>Browse</span>
         </div>
         <div className="header__top-row--right">
-          <FontAwesomeIcon icon={faMagnifyingGlass} className="icon" />
-          <FontAwesomeIcon icon={faBell} className="icon" />
-          <img src={Avatar} alt="" className="icon" />
+          <HeaderIcon component={<GoSearch className="icon" />} />
+          <HeaderIcon
+            component={<FaRegBell className="icon" />}
+            tooltipContent={<BellTooltip />}
+          />
+          <HeaderIcon
+            component={<img src={avatar} alt="" className="icon" />}
+            tooltipContent={<ProfileTooltip />}
+          />
         </div>
       </div>
       <div className="header-main">
