@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-import Modal from "./Modal.js";
-import MovieRow from "./MovieRow.js";
+import Modal from "../Modal.js";
+import MovieRow from "../MovieRow.js";
 
 function Home() {
   const [openModal, setOpenModal] = useState(false);

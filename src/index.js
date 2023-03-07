@@ -1,21 +1,31 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  Navigate,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
 
 import App from "./App.js";
-import ErrorPage from "./routes/errorPage.js";
-import Home from "./Home.js";
-import MyList from "./MyList.js";
-// import ErrorPage from "./routes/error-page.js";
+import ErrorPage from "./routes/error-page.js";
+import Home from "./routes/home.js";
+import MyList from "./routes/my-list.js";
 import React from "react";
 import { createRoot } from "react-dom/client";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Navigate replace to="browse" />,
+  },
+  {
+    path: "/browse",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <Home /> },
-      { path: "my-list", element: <MyList /> },
+      { path: "", element: <Home /> },
+      {
+        path: "/browse/my-list",
+        element: <MyList />,
+      },
     ],
   },
 ]);

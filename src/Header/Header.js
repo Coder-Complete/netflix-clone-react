@@ -12,9 +12,11 @@ const Header = (props) => {
     <header>
       <div className="header__top-row">
         <div className="header__top-row--left">
-          <h1 className="red">Netflix</h1>
+          <Link to="/">
+            <h1 className="red">Netflix</h1>
+          </Link>
           <span>Browse</span>
-          <Link to="/my-list">My List</Link>
+          <Link to="/browse/my-list">My List</Link>
         </div>
         <div className="header__top-row--right">
           <HeaderIcon component={<GoSearch className="icon" />} />

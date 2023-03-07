@@ -35,12 +35,21 @@
       - useReducer - can eventually refactor complex state if happens
       - useMemo - prbly wont use
       - useCallback - prbly wont use
+4. react suspense and lazy loading
+5. code splitting
 4. routing & SPA
   - my list page
-5. auth now? no.
-6. redux - at least demo
+  - loaders - replace useEffect for data
+  - forms/actions - first make sure i've demo'd forms, then replace w/ forms/actions
+  - deferred for loading states - first make sure i've demo'd ternary loading states, then replace w/ deferred
+    - https://reactrouter.com/en/main/guides/deferred
+      - rather than waiting for the component before we can trigger the fetch request, we start the request for the slow data as soon as the user starts the transition to the new route. This can significantly speed up the user experience for slower networks
+5. redux - at least demo
   - vs useContext
-7. .env file
+6. .env file for api key
+  - don't check secret key into github
+    - how to remove from github history
+  - does it actually affect request in any meaningful way for hacking?
 
 - state / lifecycle / hooks
   - https://reactjs.org/docs/hooks-reference.html
