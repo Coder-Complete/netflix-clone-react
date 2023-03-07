@@ -2,6 +2,7 @@ import BellTooltip from "./BellTooltip";
 import { FaRegBell } from "react-icons/fa";
 import { GoSearch } from "react-icons/go";
 import HeaderIcon from "./HeaderIcon";
+import { Link } from "react-router-dom";
 import ProfileTooltip from "./ProfileTooltip";
 import React from "react";
 import avatar from "../assets/Netflix-avatar.png";
@@ -13,6 +14,7 @@ const Header = (props) => {
         <div className="header__top-row--left">
           <h1 className="red">Netflix</h1>
           <span>Browse</span>
+          <Link to="/my-list">My List</Link>
         </div>
         <div className="header__top-row--right">
           <HeaderIcon component={<GoSearch className="icon" />} />

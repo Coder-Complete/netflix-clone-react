@@ -15,7 +15,8 @@ i {
 
 header {
   padding: 5px 20px;
-  background-image: url("http://occ-0-1413-1412.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABZRzrdrgF5Z59V8FJFAzWG-s7kX-OqTS1dnLAIch8Sm2ySruAH88YefXwgrUwEiQItFNPAh0Dz3rYhGThz1X3DGAuhq8wSCTXQgP.jpg?r=4a0");
+  background-image: url("https://occ-0-3933-114.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABSAoLuqKjSsXlo8YRp0setBpRCTBDQi45pd9izvd3Pfd-xpzr7gzT_X54FDVU_ghx9n-kYnEhtOPAYtZdbkg_eDd9HpfyluuL9df.webp?r=7dd");
+  /* background-image: url("http://occ-0-1413-1412.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABZRzrdrgF5Z59V8FJFAzWG-s7kX-OqTS1dnLAIch8Sm2ySruAH88YefXwgrUwEiQItFNPAh0Dz3rYhGThz1X3DGAuhq8wSCTXQgP.jpg?r=4a0"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
@@ -31,6 +32,10 @@ header {
 .header__top-row--right {
   display: flex;
   align-items: center;
+}
+
+.header__top-row--left span {
+  margin-right: 10px;
 }
 
 .header__top-row h1 {

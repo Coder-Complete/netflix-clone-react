@@ -1,13 +1,9 @@
-import "./style.css";
-
 import React, { useEffect, useState } from "react";
 
-import Header from "./Header/Header.js";
 import Modal from "./Modal.js";
 import MovieRow from "./MovieRow.js";
-import { Outlet } from "react-router-dom";
 
-const App = () => {
+function Home() {
   const [openModal, setOpenModal] = useState(false);
   const [rowData, setRowData] = useState([]);
 
@@ -36,11 +32,17 @@ const App = () => {
     });
   }, []);
   return (
-    <div className="app">
-      <Header setOpenModal={setOpenModal} />
-      <Outlet />
-    </div>
+    <main>
+      {openModal ? <Modal setOpenModal={setOpenModal} /> : null}
+      {rowData.map((rowDataObject, index) => (
+        <MovieRow
+          key={`row-${rowDataObject.id}`}
+          index={index}
+          data={rowDataObject}
+        />
+      ))}
+    </main>
   );
-};
+}
 
-export default App;
+export default Home;
