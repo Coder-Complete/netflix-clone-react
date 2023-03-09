@@ -14,7 +14,6 @@ i {
 
 h1 {
   display: inline-block;
-  padding: 10px;
 }
 
 span {
@@ -22,7 +21,7 @@ span {
 }
 
 header {
-  padding: 20px;
+  padding: 5px 20px;
   background-image: url("http://occ-0-1413-1412.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABZRzrdrgF5Z59V8FJFAzWG-s7kX-OqTS1dnLAIch8Sm2ySruAH88YefXwgrUwEiQItFNPAh0Dz3rYhGThz1X3DGAuhq8wSCTXQgP.jpg?r=4a0");
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,6 +32,23 @@ header {
 .header__top-row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header__top-row__left,
+.header__top-row__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__top-row__right img {
+  height: 30px;
+  border-radius: 5px;
+}
+
+.header-icon {
+  font-size: 25px;
+  padding: 0px 10px;
 }
 
 .red {
@@ -84,4 +100,57 @@ img {
   height: 90%;
   background-color: black;
   padding: 20px;
+}
+
+.tooltip-wrapper {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: black;
+  opacity: 0.9;
+  top: 40px;
+  display: none;
+}
+
+.tooltip-wrapper:hover .tooltip {
+  display: block;
+}
+
+.tooltip ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.tooltip li {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.tooltip li img,
+.tooltip li .icon {
+  margin-right: 10px;
+}
+
+.tooltip-sign-out {
+  padding: 20px;
+  text-align: center;
+}
+
+.browse-list-item {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.tooltip.right {
+  right: 0;
+  left: auto;
+}
+
+.tooltip.browse {
+  left: 0;
+  right: auto;
 }

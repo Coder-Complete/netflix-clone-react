@@ -18,12 +18,45 @@
 
 0. add in setup stuff more info based on notes taken for t.b. regarding css and imgs and public folder etc
 1. get far w/ clone
+  - x - clean up demo stuff
+  - x - get icons working
+    - x - use react-icons instead of fontawesome - free libs wouldn't have all icons i wanted
+  - x - add profile avatar img
+  - x - tooltips for nav bar
+    - x - *challenge - do Browse dropdown
+  - refactor css (b/c starts to get uglier w/ one css file)
+    - css in react - explain diff ways to do it
+  - hover scales out and see more details
+  - *challenge - get genres (/genre/movie/list) and render instead of genre id's
+  - *challenge - scroll down and download more lists
+    - biggest challenge - start now
+    - next biggest - start after i show how to detect when user is at bottom
+  - *challenge - auto gen what img (movie) is on big screen
 2. pause and talk about benefits of react in more detail
 3. more hooks
-4. routing
-5. auth now?
-6. redux - at least demo
-7. .env file?
+  - preface these with that useState and useEffect are pretty much all you really need, rest is either making code easier to manage or optimizing rendering
+    - useRef - input for search?
+    - useContext - hopefully will happen naturally
+    - create own hook - hopefully will come up w/ good idea naturally
+    - below probably won't happen - maybe sep into later vid
+      - useReducer - can eventually refactor complex state if happens
+      - useMemo - prbly wont use
+      - useCallback - prbly wont use
+4. react suspense and lazy loading
+5. code splitting
+4. routing & SPA
+  - my list page
+  - loaders - replace useEffect for data
+  - forms/actions - first make sure i've demo'd forms, then replace w/ forms/actions
+  - deferred for loading states - first make sure i've demo'd ternary loading states, then replace w/ deferred
+    - https://reactrouter.com/en/main/guides/deferred
+      - rather than waiting for the component before we can trigger the fetch request, we start the request for the slow data as soon as the user starts the transition to the new route. This can significantly speed up the user experience for slower networks
+5. redux - at least demo
+  - vs useContext
+6. .env file for api key
+  - don't check secret key into github
+    - how to remove from github history
+  - does it actually affect request in any meaningful way for hacking?
 
 - state / lifecycle / hooks
   - https://reactjs.org/docs/hooks-reference.html
@@ -40,7 +73,6 @@
 - debug chrome devtool
   - react site? - shows tree
 
-- SPA
 - why react
   - virtual dom
     - vanilla js updates dom faster in general
@@ -49,10 +81,10 @@
     - with react you don't have to worry about that, just tell react how you want things to look and it'll make it work for you
   - react makes it easy to couple UI with data
   - DRY - prevents repetitive code
-  - easy transition to react native / flutter as well if you want to make mobile apps (would be harder to learn swift and have to learn a lang for android as well)
-- routing
+  - code organization - easier to debug
+  - easy transition to react native / flutter as well if you want to make multi-platform mobile apps (would be harder to learn swift and have to learn a lang for android as well)
+  - easy to do SPA (less reqs to server)
 
-- redux (vs. useContext)
 
 
 make header background image responsive
