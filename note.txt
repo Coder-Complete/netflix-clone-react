@@ -24,10 +24,10 @@
   - x - add profile avatar img
   - x - tooltips for nav bar
     - x - *challenge - do Browse dropdown
+  - x - hover scales out and see more details
   - refactor css (b/c starts to get uglier w/ one css file)
     - css in react - explain diff ways to do it
   - arrows to flip through movie data
-  - hover scales out and see more details
   - *challenge - get genres (/genre/movie/list) and render instead of genre id's
   - *challenge - scroll down and download more lists
     - biggest challenge - start now
