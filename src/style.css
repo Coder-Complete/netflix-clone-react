@@ -20,6 +20,11 @@ span {
   padding: 10px;
 }
 
+img {
+  height: 100%;
+  /* width: auto; */
+}
+
 header {
   padding: 5px 20px;
   background-image: url("http://occ-0-1413-1412.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABZRzrdrgF5Z59V8FJFAzWG-s7kX-OqTS1dnLAIch8Sm2ySruAH88YefXwgrUwEiQItFNPAh0Dz3rYhGThz1X3DGAuhq8wSCTXQgP.jpg?r=4a0");
@@ -82,12 +87,6 @@ button {
   height: 200px;
   display: flex;
   justify-content: center;
-}
-
-img {
-  height: 100%;
-  /* width: auto; */
-  margin: 5px;
 }
 
 .modal {
@@ -154,3 +153,44 @@ img {
   left: 0;
   right: auto;
 }
+
+.green {
+  color: green;
+}
+
+.border {
+  border: 1px solid white;
+  font-size: 12px;
+}
+
+.movie {
+  transition: all 0.2s linear;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.movie:hover {
+  transform: scale(1.5);
+  transition: all 0.2s linear 0.5s;
+}
+
+.movie-details {
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s linear;
+  visibility: hidden;
+}
+
+.movie:hover .movie-details {
+  visibility: visible;
+  transition: all 0.2s linear 0.5s;
+}
+
+/* .movie-details__info-line span {
+  white-space: nowrap;
+} */
