@@ -1,3 +1,5 @@
+import "./MovieRow.css";
+
 import Movie from "./Movie";
 import React from "react";
 

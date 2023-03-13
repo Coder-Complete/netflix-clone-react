@@ -9,7 +9,7 @@
   - x - npm
   - x - libraries/packages
 
-- make a layout
+- x - make a layout
   - x - first put all html in <App/>
   - x - then separate out into components (with props)
   - then make interactive (with state, etc)
@@ -17,6 +17,8 @@
 - x - props
 
 0. add in setup stuff more info based on notes taken for t.b. regarding css and imgs and public folder etc
+  - eslint?
+  - prettier?
 1. get far w/ clone
   - x - clean up demo stuff
   - x - get icons working
@@ -25,16 +27,24 @@
   - x - tooltips for nav bar
     - x - *challenge - do Browse dropdown
   - x - hover scales out and see more details
-  - refactor css (b/c starts to get uglier w/ one css file)
-    - css in react - explain diff ways to do it
+  - x - refactor css (b/c starts to get uglier w/ one css file)
+    - x - css in react - explain diff ways to do it
   - arrows to flip through movie data
+  - talk about npm libraries and how it's worth looking them up
+  - **summary of all things react**
+    - "i just wanted to give you a sense of react before i talked a little more about how it works"
+    - why react (see bottom)
+    - show react docs and how much we've covered vs not
+      - go through important things we haven't covered (except hooks, code splitting, routing/SPA, .env)
   - *challenge - get genres (/genre/movie/list) and render instead of genre id's
   - *challenge - scroll down and download more lists
     - biggest challenge - start now
     - next biggest - start after i show how to detect when user is at bottom
   - *challenge - auto gen what img (movie) is on big screen
-2. pause and talk about benefits of react in more detail
-3. more hooks
+  - form - make login page (password requirements for validation)
+    - for now will have to comment this out if want to work on main page
+      - improve w/ router later on
+2. more hooks
   - preface these with that useState and useEffect are pretty much all you really need, rest is either making code easier to manage or optimizing rendering
     - useRef - input for search?
     - useContext - hopefully will happen naturally
@@ -43,13 +53,14 @@
       - useReducer - can eventually refactor complex state if happens
       - useMemo - prbly wont use
       - useCallback - prbly wont use
-4. react suspense and lazy loading
-5. code splitting
-4. routing & SPA
+4. code splitting, react suspense, and lazy loading
+  - ternary loading state for data (movies)
+5. routing & SPA
+  - login page
   - my list page
-  - loaders - replace useEffect for data
-  - forms/actions - first make sure i've demo'd forms, then replace w/ forms/actions
-  - deferred for loading states - first make sure i've demo'd ternary loading states, then replace w/ deferred
+  - ...loaders - replace useEffect for data
+  -... forms/actions - first make sure i've demo'd forms, then replace w/ forms/actions
+  - ...deferred for loading states - first make sure i've demo'd ternary loading states, then replace w/ deferred
     - https://reactrouter.com/en/main/guides/deferred
       - rather than waiting for the component before we can trigger the fetch request, we start the request for the slow data as soon as the user starts the transition to the new route. This can significantly speed up the user experience for slower networks
 5. redux - at least demo

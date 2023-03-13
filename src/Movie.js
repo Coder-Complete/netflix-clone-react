@@ -1,3 +1,5 @@
+import "./Movie.css";
+
 import React from "react";
 
 function Movie({ data }) {

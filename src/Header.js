@@ -1,3 +1,5 @@
+import "./Header.css";
+
 import { BsPencil, BsPerson, BsQuestionCircle } from "react-icons/bs";
 
 import { GiCardExchange } from "react-icons/gi";
@@ -26,7 +28,7 @@ const Header = (props) => {
             </div>
           </div>
         </div>
-        <div className="header__top-row__right">
+        <div className={"header__top-row__right"}>
           <IoSearch className="header-icon" />
           <div className="tooltip-wrapper">
             <IoMdNotificationsOutline className="header-icon" />
@@ -34,7 +36,7 @@ const Header = (props) => {
               <p>No recent notifications</p>
             </div>
           </div>
-          <div className="tooltip-wrapper">
+          <div className="tooltip-wrapper" style={{ marginLeft: "15px" }}>
             <img src={avatarPhoto} alt="" />
             <div className="tooltip right">
               <ul>

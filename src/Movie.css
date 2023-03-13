@@ -1,0 +1,40 @@
+.movie {
+  transition: all 0.2s linear;
+  margin: 0px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie:hover {
+  transform: scale(1.5);
+  transition: all 0.2s linear 0.5s;
+}
+
+.movie-details {
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s linear;
+  visibility: hidden;
+}
+
+.movie:hover .movie-details {
+  visibility: visible;
+  transition: all 0.2s linear 0.5s;
+}
+
+.movie-details__info-line span {
+  font-size: 14px;
+  /* white-space: nowrap; */
+}
+
+.green {
+  color: green;
+}
+
+.border {
+  border: 1px solid white;
+  font-size: 12px;
+}

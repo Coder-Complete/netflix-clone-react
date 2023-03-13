@@ -1,0 +1,9 @@
+.row {
+  margin: 10px;
+}
+
+.images-container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
