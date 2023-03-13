@@ -1,9 +1,20 @@
 .row {
-  margin: 10px;
+  margin: 10px 0px;
 }
 
 .images-container {
   height: 200px;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+
+.images-container:hover .left-arrow,
+.images-container:hover .right-arrow {
+  display: flex;
+  z-index: 3;
+}
+
+.images-container .movie:hover {
+  overflow-y: visible;
 }

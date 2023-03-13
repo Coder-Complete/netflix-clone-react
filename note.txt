@@ -30,6 +30,7 @@
   - x - refactor css (b/c starts to get uglier w/ one css file)
     - x - css in react - explain diff ways to do it
   - arrows to flip through movie data
+    - didn't do animation
   - talk about npm libraries and how it's worth looking them up
   - **summary of all things react**
     - "i just wanted to give you a sense of react before i talked a little more about how it works"
