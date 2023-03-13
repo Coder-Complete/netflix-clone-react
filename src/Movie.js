@@ -7,7 +7,9 @@ function Movie({ data }) {
   console.log(data);
   return (
     <div className="movie">
-      <img src={imgUrl + data.poster_path} alt={data.name} />
+      <div className="movie__image-container">
+        <img src={imgUrl + data.poster_path} alt={data.name} />
+      </div>
       <div className="movie-details">
         <div className="movie-details__top-row"></div>
         <div className="movie-details__info-line">
