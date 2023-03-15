@@ -1,13 +1,21 @@
 .movie {
   transition: all 0.2s linear;
-  margin: 0px 5px;
+  margin: 0px 2px;
   display: flex;
   flex-direction: column;
+  width: 150px;
+}
+
+.movie img {
+  width: 100%;
+  width: auto;
+  height: auto;
 }
 
 .movie:hover {
   transform: scale(1.5);
   transition: all 0.2s linear 0.5s;
+  z-index: 2;
 }
 
 .movie-details {

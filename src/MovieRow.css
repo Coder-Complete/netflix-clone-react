@@ -1,12 +1,13 @@
 .row {
-  margin: 10px 0px;
+  margin: 30px 0px;
 }
 
 .images-container {
-  height: 200px;
+  height: 225px;
   display: flex;
   justify-content: center;
   position: relative;
+  margin-top: 10px;
 }
 
 .images-container:hover .left-arrow,
@@ -23,7 +24,7 @@
   align-items: center;
   font-size: 30px;
   padding: 20px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .left-arrow:hover,
