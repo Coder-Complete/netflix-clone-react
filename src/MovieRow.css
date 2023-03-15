@@ -1,9 +1,41 @@
 .row {
-  margin: 10px;
+  margin: 10px 0px;
 }
 
 .images-container {
   height: 200px;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+
+.images-container:hover .left-arrow,
+.images-container:hover .right-arrow {
+  display: flex;
+}
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  font-size: 30px;
+  padding: 20px;
+  z-index: 2;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  font-size: 40px;
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
 }

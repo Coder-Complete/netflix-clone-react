@@ -8,9 +8,11 @@ const MovieRow = (props) => {
     <div className="row">
       <h4>{props.data.name}</h4>
       <div className="images-container">
+        <div className="left-arrow">{"<"}</div>
         {props.data.items.map((movie) => (
           <Movie data={movie} key={`${movie.id}`} />
         ))}
+        <div className="right-arrow">{">"}</div>
       </div>
     </div>
   );
