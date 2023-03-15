@@ -1,11 +1,18 @@
 import "./MovieRow.css";
 
-import React, { useState, useSyncExternalStore } from "react";
+import React, { useEffect, useState } from "react";
 
 import Movie from "./Movie";
 
 const MovieRow = ({ data }) => {
   const [page, setPage] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setScreenWidth(window.innerWidth);
+    });
+  }, []);
 
   let movieWidth = 150;
   let movieMarginLeft = 2;
@@ -14,7 +21,7 @@ const MovieRow = ({ data }) => {
 
   // get number of movies we can fit on screen
   function getNumberOfMoviesPerPage() {
-    return Math.floor(window.innerWidth / totalMovieWidth);
+    return Math.floor(screenWidth / totalMovieWidth);
   }
 
   // get number of pages

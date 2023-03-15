@@ -34,7 +34,7 @@
     - x - why react (see bottom)
     - x - show react docs and how much we've covered vs not
       - x - go through important things we haven't covered (except hooks, code splitting, routing/SPA, .env)
-  - x - (day 1 - teach) arrows to flip through movie data
+  - x - (day 1 - teach) carousel to flip through movie data
   - (day 2 - do first then teach) ^ learn animation for the carousel (either react transition group or react spring)
     - x - talk about npm libraries and how it's worth looking them up
     - refactor with carousel? (would it actually save lines?)
