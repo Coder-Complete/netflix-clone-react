@@ -29,22 +29,28 @@
   - x - hover scales out and see more details
   - x - refactor css (b/c starts to get uglier w/ one css file)
     - x - css in react - explain diff ways to do it
-  - arrows to flip through movie data
-  - talk about npm libraries and how it's worth looking them up
-  - **summary of all things react**
-    - "i just wanted to give you a sense of react before i talked a little more about how it works"
-    - why react (see bottom)
-    - show react docs and how much we've covered vs not
-      - go through important things we haven't covered (except hooks, code splitting, routing/SPA, .env)
-  - *challenge - get genres (/genre/movie/list) and render instead of genre id's
-  - *challenge - scroll down and download more lists
+  - x - (day 1 - teach) **summary of all things react**
+    - x - "i just wanted to give you a sense of react before i talked a little more about how it works"
+    - x - why react (see bottom)
+    - x - show react docs and how much we've covered vs not
+      - x - go through important things we haven't covered (except hooks, code splitting, routing/SPA, .env)
+  - (day 1 - teach) arrows to flip through movie data
+  - (day 2 - do first then teach) ^ learn animation for the carousel (either react transition group or react spring)
+    - talk about npm libraries and how it's worth looking them up
+    - refactor with carousel? (would it actually save lines?)
+  - (day 2 - do first then teach) *challenge - get genres (/genre/movie/list) and render instead of genre id's
+  - (day 3 - do first then teach) *challenge - scroll down and download more lists
     - biggest challenge - start now
     - next biggest - start after i show how to detect when user is at bottom
-  - *challenge - auto gen what img (movie) is on big screen
-  - form - make login page (password requirements for validation)
+  - *challenge (maybe) - auto gen what img (movie) is on big screen
+  - (day 4 - do first then teach) form - make login page (password requirements for validation)
     - for now will have to comment this out if want to work on main page
       - improve w/ router later on
-2. more hooks
+    - OR DO MULTI STEP FORM PROJECT
+      - - updating objects & arrays in state (formFields)
+    - get to an example for this somehow
+    - https://beta.reactjs.org/learn/updating-objects-in-state
+2. (days 5-8 - do first then teach) more hooks
   - preface these with that useState and useEffect are pretty much all you really need, rest is either making code easier to manage or optimizing rendering
     - useRef - input for search?
     - useContext - hopefully will happen naturally
@@ -53,9 +59,9 @@
       - useReducer - can eventually refactor complex state if happens
       - useMemo - prbly wont use
       - useCallback - prbly wont use
-4. code splitting, react suspense, and lazy loading
+4. (days 9-10 - do first then teach) code splitting, react suspense, and lazy loading
   - ternary loading state for data (movies)
-5. routing & SPA
+5. (days 11-12 - do first then teach) routing & SPA
   - login page
   - my list page
   - ...loaders - replace useEffect for data
@@ -63,12 +69,13 @@
   - ...deferred for loading states - first make sure i've demo'd ternary loading states, then replace w/ deferred
     - https://reactrouter.com/en/main/guides/deferred
       - rather than waiting for the component before we can trigger the fetch request, we start the request for the slow data as soon as the user starts the transition to the new route. This can significantly speed up the user experience for slower networks
-5. redux - at least demo
+5. (day 13 - do first then teach?) redux - at least demo
   - vs useContext
-6. .env file for api key
+6. (day 14 - do first then teach) .env file for api key
   - don't check secret key into github
     - how to remove from github history
   - does it actually affect request in any meaningful way for hacking?
+    - no - would have to keep on server, it just helps you not commit secrets to github repo
 
 - state / lifecycle / hooks
   - https://reactjs.org/docs/hooks-reference.html
