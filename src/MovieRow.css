@@ -3,11 +3,11 @@
 }
 
 .images-container {
-  height: 225px;
-  display: flex;
-  justify-content: center;
+  /* height: 225px; */
+  /* display: flex; */
+  /* justify-content: center;
   position: relative;
-  margin-top: 10px;
+  margin-top: 10px; */
 }
 
 .images-container:hover .left-arrow,
@@ -39,4 +39,13 @@
 
 .right-arrow {
   right: 0;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  overflow: visible !important;
 }

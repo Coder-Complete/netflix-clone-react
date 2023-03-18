@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+i {
+  padding: 10px;
+}
+
+h1 {
+  display: inline-block;
+}
+
+span {
+  padding: 10px;
+}
+
+img {
+  height: 100%;
+  /* width: auto; */
+}
+
+.red {
+  color: red;
+}
+
+.gray {
+  color: gray;
+}
+
+button {
+  color: black;
+  padding: 15px;
+  border: none;
+  margin: 10px;
+}
+
+.gray-button {
+  background-color: gray;
+}
+
+p {
+  text-align: center;
+}
