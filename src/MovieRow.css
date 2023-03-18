@@ -5,9 +5,12 @@
 .images-container {
   height: 225px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   position: relative;
   margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
 }
 
 .images-container:hover .left-arrow,

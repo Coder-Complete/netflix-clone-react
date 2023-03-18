@@ -6,6 +6,7 @@ import Movie from "./Movie";
 
 const MovieRow = ({ data }) => {
   const [page, setPage] = useState(0);
+  const [translate, setTranslate] = useState(0);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -43,28 +44,40 @@ const MovieRow = ({ data }) => {
     return allMovies.slice(beginning, end);
   }
 
-  let arrayOfMoviesForCurrentPage = getArrayOfMovies();
+  // let arrayOfMoviesForCurrentPage = getArrayOfMovies();
+  let numOfMoviesPerPage = getNumberOfMoviesPerPage();
   let lastPageNumber = getLastPageNumber();
 
   return (
     <div className="row">
       <h4>{data.name}</h4>
-      <div className="images-container">
+      <div
+        className="images-container"
+        style={{ width: `${154 * numOfMoviesPerPage}px` }}
+      >
         <div
           className="left-arrow"
           onClick={() => {
-            if (page !== 0) setPage(page - 1);
+            if (page !== 0) {
+              let newPageNum = page - 1;
+              setPage(newPageNum);
+              setTranslate(-154 * newPageNum * numOfMoviesPerPage);
+            }
           }}
         >
           {"<"}
         </div>
-        {arrayOfMoviesForCurrentPage.map((movie) => (
-          <Movie data={movie} key={`${movie.id}`} />
+        {data.items.map((movie) => (
+          <Movie translate={translate} data={movie} key={`${movie.id}`} />
         ))}
         <div
           className="right-arrow"
           onClick={() => {
-            if (page !== lastPageNumber) setPage(page + 1);
+            if (page !== lastPageNumber) {
+              let newPageNum = page + 1;
+              setPage(newPageNum);
+              setTranslate(-154 * newPageNum * numOfMoviesPerPage);
+            }
           }}
         >
           {">"}
