@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 import Movie from "./Movie";
 
-const MovieRow = ({ data }) => {
+const MovieRow = ({ data, setMovieModal }) => {
   const [page, setPage] = useState(0);
   const [translate, setTranslate] = useState(0);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -68,7 +68,12 @@ const MovieRow = ({ data }) => {
           {"<"}
         </div>
         {data.items.map((movie) => (
-          <Movie translate={translate} data={movie} key={`${movie.id}`} />
+          <Movie
+            translate={translate}
+            data={movie}
+            key={`${movie.id}`}
+            setMovieModal={setMovieModal}
+          />
         ))}
         <div
           className="right-arrow"
