@@ -9,9 +9,8 @@ import MovieRow from "./MovieRow.js";
 
 const App = () => {
   const [openModal, setOpenModal] = useState(false);
-  const [openMovieModal, setOpenMovieModal] = useState(false);
   const [rowData, setRowData] = useState([]);
-  const [movieModalData, setMovieModal] = useState({
+  const [movieModal, setMovieModal] = useState({
     show: false,
     top: 0,
     left: 0,
@@ -54,8 +53,8 @@ const App = () => {
             setMovieModal={setMovieModal}
           />
         ))}
-        {movieModalData.show && (
-          <MovieModal data={movieModalData} setMovieModal={setMovieModal} />
+        {movieModal.show && (
+          <MovieModal data={movieModal} setMovieModal={setMovieModal} />
         )}
       </main>
     </div>

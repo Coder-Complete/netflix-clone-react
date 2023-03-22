@@ -5,12 +5,15 @@ import React from "react";
 function MovieModal({ data, setMovieModal }) {
   const { top, left, movieData } = data;
   const imgUrl = "https://image.tmdb.org/t/p/w500";
+
   return (
     <div
       className="movie-modal"
-      style={{ left: left - 75, top: window.pageYOffset + top - 75 }}
-      // need to add scrolltop to top
-      // style={{ left: left - 75, top: top + 300 }}
+      style={{
+        left: left - 75,
+        top: window.pageYOffset + top - 75,
+        // width: show ? "300px" : "0px",
+      }}
       onMouseLeave={() =>
         setMovieModal({ show: false, top: 0, left: 0, movieData: {} })
       }

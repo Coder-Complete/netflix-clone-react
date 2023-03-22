@@ -3,9 +3,7 @@
 }
 
 .images-container {
-  /* height: 225px; */
   display: flex;
-  /* justify-content: center; */
   position: relative;
   margin-top: 10px;
   margin-right: auto;
