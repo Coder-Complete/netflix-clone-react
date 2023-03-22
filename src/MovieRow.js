@@ -15,7 +15,7 @@ const MovieRow = ({ data, setMovieModal }) => {
     });
   }, []);
 
-  let movieWidth = 150;
+  let movieWidth = 200;
   let movieMarginLeft = 2;
   let movieMarginRight = 2;
   let totalMovieWidth = movieWidth + movieMarginLeft + movieMarginRight;
@@ -53,7 +53,7 @@ const MovieRow = ({ data, setMovieModal }) => {
       <h4>{data.name}</h4>
       <div
         className="images-container"
-        style={{ width: `${154 * numOfMoviesPerPage}px` }}
+        style={{ width: `${totalMovieWidth * numOfMoviesPerPage}px` }}
       >
         <div
           className="left-arrow"
@@ -61,7 +61,7 @@ const MovieRow = ({ data, setMovieModal }) => {
             if (page !== 0) {
               let newPageNum = page - 1;
               setPage(newPageNum);
-              setTranslate(-154 * newPageNum * numOfMoviesPerPage);
+              setTranslate(-totalMovieWidth * newPageNum * numOfMoviesPerPage);
             }
           }}
         >
@@ -81,7 +81,7 @@ const MovieRow = ({ data, setMovieModal }) => {
             if (page !== lastPageNumber) {
               let newPageNum = page + 1;
               setPage(newPageNum);
-              setTranslate(-154 * newPageNum * numOfMoviesPerPage);
+              setTranslate(-totalMovieWidth * newPageNum * numOfMoviesPerPage);
             }
           }}
         >

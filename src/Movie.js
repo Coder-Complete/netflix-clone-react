@@ -35,9 +35,7 @@ function Movie({ data, translate, setMovieModal }) {
       className="movie"
       ref={ref}
       style={{
-        transform: `translate(${translate}px) ${
-          hover ? "scale(1.5)" : "scale(1)"
-        }`,
+        transform: `translate(${translate}px)`,
       }}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}

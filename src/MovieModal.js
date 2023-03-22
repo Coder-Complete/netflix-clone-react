@@ -10,8 +10,8 @@ function MovieModal({ data, setMovieModal }) {
     <div
       className="movie-modal"
       style={{
-        left: left - 75,
-        top: window.pageYOffset + top - 75,
+        left: left - 50,
+        top: window.pageYOffset + top - 50,
         // width: show ? "300px" : "0px",
       }}
       onMouseLeave={() =>

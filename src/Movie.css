@@ -1,9 +1,10 @@
 .movie {
-  transition: all 0.2s linear;
+  transition: all 0.6s ease-out;
+  /* transition: all 0.54s cubic-bezier(0.5, 0, 0.1, 1); */
   margin: 0px 2px;
   display: flex;
   flex-direction: column;
-  width: 150px;
+  width: 200px;
 }
 
 .movie img {
