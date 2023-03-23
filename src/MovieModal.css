@@ -42,15 +42,15 @@
 }
 .example-enter-active {
   transform: scale(1.5);
-  transition: all 300ms;
+  transition: all 1000ms;
 }
 /* .example-enter-done {
   width: 300px;
 } */
-.example-exit {
+/* .example-exit {
   transform: scale(1.5);
 }
 .example-exit-active {
   transform: scale(1);
   transition: all 300ms;
-}
+} */
