@@ -15,9 +15,8 @@ function MovieModal({ data, setMovieModal }) {
       in={show}
       nodeRef={nodeRef}
       classNames="example"
-      timeout={1000}
+      timeout={300}
       onExiting={() => console.log("exiting")}
-      // unmountOnExit
     >
       <div
         className="movie-modal"
@@ -27,8 +26,12 @@ function MovieModal({ data, setMovieModal }) {
           top: window.pageYOffset + top - 50,
         }}
         onMouseLeave={() => {
-          console.log("mouse leave");
-          setMovieModal({ show: false, top: 0, left: 0, movieData: {} });
+          setMovieModal({
+            show: false,
+            top: top,
+            left: left,
+            movieData: movieData,
+          });
         }}
       >
         {show && <img src={imgUrl + movieData.backdrop_path} alt={data.name} />}
