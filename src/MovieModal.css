@@ -44,9 +44,11 @@
   transform: scale(1.5);
   transition: all 1000ms;
 }
-/* .example-enter-done {
-  width: 300px;
-} */
+.example-enter-done {
+  transform: scale(1.5);
+
+  /* width: 300px; */
+}
 /* .example-exit {
   transform: scale(1.5);
 }

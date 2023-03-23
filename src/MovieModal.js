@@ -1,6 +1,6 @@
 import "./MovieModal.css";
 
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 
 import { CSSTransition } from "react-transition-group";
 
@@ -8,12 +8,8 @@ function MovieModal({ data, setMovieModal }) {
   const { show, top, left, movieData } = data;
   const imgUrl = "https://image.tmdb.org/t/p/w500";
 
-  useEffect(() => {
-    return () => console.log("unmounting");
-  }, []);
-
   const nodeRef = useRef(null);
-  console.log("show:", show);
+  console.log(show);
   return (
     <CSSTransition
       in={show}
@@ -29,30 +25,30 @@ function MovieModal({ data, setMovieModal }) {
         style={{
           left: left,
           top: window.pageYOffset + top - 50,
-          // width: show ? "300px" : "0px",
         }}
         onMouseLeave={() => {
           console.log("mouse leave");
           setMovieModal({ show: false, top: 0, left: 0, movieData: {} });
         }}
       >
-        {/* <img src={imgUrl + movieData.poster_path} alt={data.name} /> */}
-        <img src={imgUrl + movieData.backdrop_path} alt={data.name} />
-        <div className="movie-details">
-          <div className="movie-details__top-row"></div>
-          <div className="movie-details__info-line">
-            <span className="green">50% Match</span>
-            <span className="border">TV-MA</span>
-            <span>6 Seasons</span>
-            <span className="border">HD</span>
+        {show && <img src={imgUrl + movieData.backdrop_path} alt={data.name} />}
+        {show && (
+          <div className="movie-details">
+            <div className="movie-details__top-row"></div>
+            <div className="movie-details__info-line">
+              <span className="green">50% Match</span>
+              <span className="border">TV-MA</span>
+              <span>6 Seasons</span>
+              <span className="border">HD</span>
+            </div>
+            <div className="movie-details__genres">
+              {show &&
+                movieData.genre_ids.map((genreId) => (
+                  <span key={genreId}>{genreId}</span>
+                ))}
+            </div>
           </div>
-          <div className="movie-details__genres">
-            {show &&
-              movieData.genre_ids.map((genreId) => (
-                <span key={genreId}>{genreId}</span>
-              ))}
-          </div>
-        </div>
+        )}
       </div>
     </CSSTransition>
   );
