@@ -1,6 +1,6 @@
 import "./MovieModal.css";
 
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 import { CSSTransition } from "react-transition-group";
 
@@ -8,15 +8,20 @@ function MovieModal({ data, setMovieModal }) {
   const { show, top, left, movieData } = data;
   const imgUrl = "https://image.tmdb.org/t/p/w500";
 
-  const nodeRef = useRef(null);
+  useEffect(() => {
+    return () => console.log("unmounting");
+  }, []);
 
+  const nodeRef = useRef(null);
+  console.log("show:", show);
   return (
     <CSSTransition
       in={show}
       nodeRef={nodeRef}
       classNames="example"
       timeout={1000}
-      unmountOnExit
+      onExiting={() => console.log("exiting")}
+      // unmountOnExit
     >
       <div
         className="movie-modal"
@@ -26,9 +31,10 @@ function MovieModal({ data, setMovieModal }) {
           top: window.pageYOffset + top - 50,
           // width: show ? "300px" : "0px",
         }}
-        onMouseLeave={() =>
-          setMovieModal({ show: false, top: 0, left: 0, movieData: {} })
-        }
+        onMouseLeave={() => {
+          console.log("mouse leave");
+          setMovieModal({ show: false, top: 0, left: 0, movieData: {} });
+        }}
       >
         {/* <img src={imgUrl + movieData.poster_path} alt={data.name} /> */}
         <img src={imgUrl + movieData.backdrop_path} alt={data.name} />
