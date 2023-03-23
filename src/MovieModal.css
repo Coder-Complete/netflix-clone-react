@@ -1,6 +1,5 @@
 .movie-modal {
   position: absolute;
-  /* width: 300px; */
   width: 0px;
   z-index: 4;
   display: flex;
@@ -8,7 +7,6 @@
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.75);
-  /* transition: scale 3s; */
 }
 
 .movie-modal img {
@@ -21,19 +19,11 @@
   padding: 10px;
   position: relative;
   z-index: 1;
-  /* transition: all 0.2s linear; */
   flex: 1;
-  /* visibility: hidden; */
 }
-
-/* .movie:hover .movie-details {
-  visibility: visible;
-  transition: all 0.2s linear 0.5s;
-} */
 
 .movie-details__info-line span {
   font-size: 14px;
-  /* white-space: nowrap; */
 }
 
 .example-enter {

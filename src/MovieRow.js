@@ -36,15 +36,6 @@ const MovieRow = ({ data, setMovieModal }) => {
     );
   }
 
-  function getArrayOfMovies() {
-    let allMovies = data.items;
-    let numOfMoviesPerPage = getNumberOfMoviesPerPage();
-    let beginning = page * numOfMoviesPerPage;
-    let end = page * numOfMoviesPerPage + numOfMoviesPerPage;
-    return allMovies.slice(beginning, end);
-  }
-
-  // let arrayOfMoviesForCurrentPage = getArrayOfMovies();
   let numOfMoviesPerPage = getNumberOfMoviesPerPage();
   let lastPageNumber = getLastPageNumber();
 

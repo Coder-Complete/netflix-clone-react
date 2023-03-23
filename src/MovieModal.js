@@ -17,13 +17,14 @@ function MovieModal({ data, setMovieModal }) {
       classNames="example"
       timeout={300}
       onExiting={() => console.log("exiting")}
+      onExited={() => console.log("exited")}
     >
       <div
         className="movie-modal"
         ref={nodeRef}
         style={{
           left: left,
-          top: window.pageYOffset + top - 50,
+          top: window.pageYOffset + top,
         }}
         onMouseLeave={() => {
           setMovieModal({
@@ -34,24 +35,22 @@ function MovieModal({ data, setMovieModal }) {
           });
         }}
       >
-        {show && <img src={imgUrl + movieData.backdrop_path} alt={data.name} />}
-        {show && (
-          <div className="movie-details">
-            <div className="movie-details__top-row"></div>
-            <div className="movie-details__info-line">
-              <span className="green">50% Match</span>
-              <span className="border">TV-MA</span>
-              <span>6 Seasons</span>
-              <span className="border">HD</span>
-            </div>
-            <div className="movie-details__genres">
-              {show &&
-                movieData.genre_ids.map((genreId) => (
-                  <span key={genreId}>{genreId}</span>
-                ))}
-            </div>
+        {<img src={imgUrl + movieData.backdrop_path} alt={data.name} />}
+        <div className="movie-details">
+          <div className="movie-details__top-row"></div>
+          <div className="movie-details__info-line">
+            <span className="green">50% Match</span>
+            <span className="border">TV-MA</span>
+            <span>6 Seasons</span>
+            <span className="border">HD</span>
           </div>
-        )}
+          <div className="movie-details__genres">
+            {show &&
+              movieData.genre_ids.map((genreId) => (
+                <span key={genreId}>{genreId}</span>
+              ))}
+          </div>
+        </div>
       </div>
     </CSSTransition>
   );
