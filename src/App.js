@@ -53,9 +53,9 @@ const App = () => {
             setMovieModal={setMovieModal}
           />
         ))}
-        {movieModal.show && (
-          <MovieModal data={movieModal} setMovieModal={setMovieModal} />
-        )}
+        {/* {movieModal.show && ( */}
+        <MovieModal data={movieModal} setMovieModal={setMovieModal} />
+        {/* )} */}
       </main>
     </div>
   );
