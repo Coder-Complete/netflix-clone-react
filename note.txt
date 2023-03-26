@@ -40,17 +40,10 @@
   - x - animation for the carousel (react transition group? react spring?)
     - x - talk about npm libraries and how it's worth looking them up
     - x - mention that there are carousel libraries
-  - challenge - get genres (/genre/movie/list) and render instead of genre id's
-  - challenge - scroll down and download more lists
-    - biggest challenge - start now
-    - next biggest - start after i show how to detect when user is at bottom
-  - form - make login page (password requirements for validation)
-    - for now will have to comment this out if want to work on main page
-      - improve w/ router later on
-    - OR DO MULTI STEP FORM PROJECT
-      - - updating objects & arrays in state (formFields)
-    - get to an example for this somehow
-    - https://beta.reactjs.org/learn/updating-objects-in-state
+  - x - challenge - scroll down and download more lists
+    - x - biggest challenge - start now
+    - x - next biggest - start after i show how to detect when user is at bottom
+  - x - challenge - get genres (/genre/movie/list) and render instead of genre id's
 2. more hooks
   - preface these with that useState and useEffect are pretty much all you really need, rest is either making code easier to manage or optimizing rendering
     - useContext - hopefully will happen naturally
@@ -63,6 +56,13 @@
   - ternary loading state for data (movies)
 5. routing & SPA
   - login page
+    - *forms* - make login page (password requirements for validation)
+      - for now will have to comment this out if want to work on main page
+        - improve w/ router later on
+      - OR DO MULTI STEP FORM PROJECT
+        - - updating objects & arrays in state (formFields)
+      - get to an example for this somehow
+      - https://beta.reactjs.org/learn/updating-objects-in-state
   - my list page
   - ...loaders - replace useEffect for data
   -... forms/actions - first make sure i've demo'd forms, then replace w/ forms/actions
