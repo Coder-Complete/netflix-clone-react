@@ -1,14 +1,17 @@
-import "./style.css";
+import "./App.css";
 
 import React, { useEffect, useState } from "react";
 
 import Header from "./Header.js";
 import Modal from "./Modal.js";
+import MovieModal from "./MovieModal.js";
 import MovieRow from "./MovieRow.js";
 
 const App = () => {
   const [openModal, setOpenModal] = useState(false);
   const [rowData, setRowData] = useState([]);
+  const [movieModalData, setMovieModalData] = useState({});
+  const [movieModalPosition, setMovieModalPosition] = useState({});
 
   useEffect(() => {
     let token =
@@ -35,9 +38,20 @@ const App = () => {
     <div className="app">
       <Header setOpenModal={setOpenModal} />
       <main>
+        <MovieModal
+          data={movieModalData}
+          setMovieModalData={setMovieModalData}
+          position={movieModalPosition}
+        />
         {openModal && <Modal setOpenModal={setOpenModal} />}
         {rowData.map((rowDataObject, index) => (
-          <MovieRow key={rowDataObject.id} index={index} data={rowDataObject} />
+          <MovieRow
+            key={rowDataObject.id}
+            index={index}
+            data={rowDataObject}
+            setMovieModalData={setMovieModalData}
+            setMovieModalPosition={setMovieModalPosition}
+          />
         ))}
       </main>
     </div>

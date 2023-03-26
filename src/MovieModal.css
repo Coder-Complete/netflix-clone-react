@@ -1,0 +1,45 @@
+.movie-modal {
+  position: absolute;
+  z-index: 100;
+  width: 0px;
+}
+
+.movie-modal img {
+  width: 100%;
+}
+
+.movie-details {
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+  /* transition: all 0.2s linear; */
+}
+
+.movie-modal-transition-enter {
+  width: 225px;
+  transform: scale(1);
+}
+
+.movie-modal-transition-enter-active {
+  width: 225px;
+  transform: scale(1.5);
+  transition: all 300ms;
+}
+
+.movie-modal-transition-enter-done {
+  width: 225px;
+  transform: scale(1.5);
+}
+
+.movie-modal-transition-exit {
+  width: 225px;
+  transform: scale(1.5);
+  transition: scale 300ms;
+}
+.movie-modal-transition-exit-active {
+  width: 225px;
+  transform: scale(1);
+  transition: all 300ms;
+}

@@ -33,18 +33,6 @@ header {
   width: 40%;
 }
 
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 12px;
-  width: 90%;
-  height: 90%;
-  background-color: black;
-  padding: 20px;
-}
-
 .tooltip-wrapper {
   position: relative;
 }

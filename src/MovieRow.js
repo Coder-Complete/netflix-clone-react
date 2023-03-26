@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 import Movie from "./Movie";
 
-const MovieRow = ({ data }) => {
+const MovieRow = ({ data, setMovieModalData, setMovieModalPosition }) => {
   const [page, setPage] = useState(0);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
@@ -64,6 +64,8 @@ const MovieRow = ({ data }) => {
             data={movie}
             key={`${movie.id}`}
             translate={-numOfMoviesPerPage * page * 229}
+            setMovieModalData={setMovieModalData}
+            setMovieModalPosition={setMovieModalPosition}
           />
         ))}
         <div
