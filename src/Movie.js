@@ -2,13 +2,13 @@ import "./Movie.css";
 
 import React from "react";
 
-function Movie({ data }) {
+function Movie({ data, translate }) {
   const imgUrl = "https://image.tmdb.org/t/p/w500";
   // console.log(data);
   return (
-    <div className="movie">
-      <img src={imgUrl + data.poster_path} alt={data.name} />
-      <div className="movie-details">
+    <div className="movie" style={{ transform: `translateX(${translate}px)` }}>
+      <img src={imgUrl + data.backdrop_path} alt={data.name} />
+      {/* <div className="movie-details">
         <div className="movie-details__top-row"></div>
         <div className="movie-details__info-line">
           <span className="green">50% Match</span>
@@ -21,7 +21,7 @@ function Movie({ data }) {
             <span key={genreId}>{genreId}</span>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

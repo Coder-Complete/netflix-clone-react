@@ -3,7 +3,7 @@
   margin: 0px 2px;
   display: flex;
   flex-direction: column;
-  width: 150px;
+  width: 225px;
 }
 
 .movie img {
@@ -12,11 +12,11 @@
   height: auto;
 }
 
-.movie:hover {
+/* .movie:hover {
   transform: scale(1.5);
   transition: all 0.2s linear 0.5s;
   z-index: 2;
-}
+} */
 
 .movie-details {
   width: 100%;

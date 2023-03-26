@@ -14,7 +14,7 @@ const MovieRow = ({ data }) => {
     });
   }, []);
 
-  let movieWidth = 150;
+  let movieWidth = 225;
   let movieMarginLeft = 2;
   let movieMarginRight = 2;
   let totalMovieWidth = movieWidth + movieMarginLeft + movieMarginRight;
@@ -35,15 +35,16 @@ const MovieRow = ({ data }) => {
     );
   }
 
-  function getArrayOfMovies() {
-    let allMovies = data.items;
-    let numOfMoviesPerPage = getNumberOfMoviesPerPage();
-    let beginning = page * numOfMoviesPerPage;
-    let end = page * numOfMoviesPerPage + numOfMoviesPerPage;
-    return allMovies.slice(beginning, end);
-  }
+  // function getArrayOfMovies() {
+  //   let allMovies = data.items;
+  //   let numOfMoviesPerPage = getNumberOfMoviesPerPage();
+  //   let beginning = page * numOfMoviesPerPage;
+  //   let end = page * numOfMoviesPerPage + numOfMoviesPerPage;
+  //   return allMovies.slice(beginning, end);
+  // }
 
-  let arrayOfMoviesForCurrentPage = getArrayOfMovies();
+  // let arrayOfMoviesForCurrentPage = getArrayOfMovies();
+  let numOfMoviesPerPage = getNumberOfMoviesPerPage();
   let lastPageNumber = getLastPageNumber();
 
   return (
@@ -58,8 +59,12 @@ const MovieRow = ({ data }) => {
         >
           {"<"}
         </div>
-        {arrayOfMoviesForCurrentPage.map((movie) => (
-          <Movie data={movie} key={`${movie.id}`} />
+        {data.items.map((movie) => (
+          <Movie
+            data={movie}
+            key={`${movie.id}`}
+            translate={-numOfMoviesPerPage * page * 229}
+          />
         ))}
         <div
           className="right-arrow"
