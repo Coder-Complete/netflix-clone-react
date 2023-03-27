@@ -19,7 +19,6 @@ function Login() {
   function signIn() {
     if (validate()) {
       navigate("../browse", { replace: true });
-      // redirect("browse");
     }
   }
 

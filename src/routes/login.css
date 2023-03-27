@@ -8,8 +8,15 @@
 
 .background {
   position: absolute;
-  height: 100vh;
   z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.background img {
+  width: 100%;
 }
 
 .sign-in-container form {
