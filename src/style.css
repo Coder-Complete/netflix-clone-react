@@ -2,11 +2,19 @@
   margin: 0;
   padding: 0;
   color: white;
-  font-size: 14px;
+}
+
+:root {
+  --red: #e50815;
+  --gray: #333333;
 }
 
 body {
   background-color: black;
+}
+
+p {
+  font-size: 14px;
 }
 
 i {

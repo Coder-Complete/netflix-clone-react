@@ -1,0 +1,47 @@
+.sign-in-container {
+  background-color: black;
+  padding: 50px;
+  height: 80vh;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.background {
+  position: absolute;
+  height: 100vh;
+  z-index: -1;
+}
+
+.sign-in-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in-container label {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray);
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: small;
+}
+
+.sign-in-container input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+#row-label {
+  flex-direction: row;
+  background-color: transparent;
+}
+#row-label input {
+  margin-right: 10px;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -7,6 +7,7 @@ import {
 import App from "./App.js";
 import ErrorPage from "./routes/error-page.js";
 import Home from "./routes/home.js";
+import Login from "./routes/login.js";
 import MyList from "./routes/my-list.js";
 import React from "react";
 import { createRoot } from "react-dom/client";
@@ -27,6 +28,17 @@ const router = createBrowserRouter([
         element: <MyList />,
       },
     ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
+    // children: [
+    //   { path: "", element: <Home /> },
+    //   {
+    //     path: "/browse/my-list",
+    //     element: <MyList />,
+    //   },
+    // ],
   },
 ]);
 
