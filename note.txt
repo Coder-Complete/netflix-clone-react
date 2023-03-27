@@ -19,6 +19,7 @@
 0. add in setup stuff more info based on notes taken for t.b. regarding css and imgs and public folder etc
   - eslint?
   - prettier?
+  - react dev tools + demo later on somewhere
 1. get far w/ clone
   - x - clean up demo stuff
   - x - get icons working
@@ -44,37 +45,35 @@
     - x - biggest challenge - start now
     - x - next biggest - start after i show how to detect when user is at bottom
   - x - challenge - get genres (/genre/movie/list) and render instead of genre id's
-2. more hooks
+  2. routing & SPA
+    - login page
+      - *forms* - make login page (password requirements for validation)
+        - for now will have to comment this out if want to work on main page
+          - improve w/ router later on
+        - OR DO MULTI STEP FORM PROJECT
+          - updating objects & arrays in state (formFields)
+        - get to an example for this somehow
+        - https://beta.reactjs.org/learn/updating-objects-in-state
+    - my list page
+  3. deployment (best way to deploy react app w/ no backend)
+
+Advanced react
+1. more hooks
   - preface these with that useState and useEffect are pretty much all you really need, rest is either making code easier to manage or optimizing rendering
-    - useContext - hopefully will happen naturally
-    - create own hook - hopefully will come up w/ good idea naturally
-    - below probably won't happen - maybe sep into later vid
-      - useReducer - can eventually refactor complex state if happens
-      - useMemo - prbly wont use
-      - useCallback - prbly wont use
-4. code splitting, react suspense, and lazy loading
+    - useContext & redux
+    - custom hooks
+    - useMemo - prbly wont use
+    - useCallback - prbly wont use
+    - useReducer - can eventually refactor complex state if happens
+2. code splitting, react suspense, and lazy loading
   - ternary loading state for data (movies)
-5. routing & SPA
-  - login page
-    - *forms* - make login page (password requirements for validation)
-      - for now will have to comment this out if want to work on main page
-        - improve w/ router later on
-      - OR DO MULTI STEP FORM PROJECT
-        - - updating objects & arrays in state (formFields)
-      - get to an example for this somehow
-      - https://beta.reactjs.org/learn/updating-objects-in-state
-  - my list page
-  - ...loaders - replace useEffect for data
-  -... forms/actions - first make sure i've demo'd forms, then replace w/ forms/actions
-  - ...deferred for loading states - first make sure i've demo'd ternary loading states, then replace w/ deferred
+3. react router (maybe)
+  - loaders - replace useEffect for data
+  - forms/actions - first make sure i've demo'd forms, then replace w/ forms/actions
+  - deferred for loading states - first make sure i've demo'd ternary loading states, then replace w/ deferred
     - https://reactrouter.com/en/main/guides/deferred
       - rather than waiting for the component before we can trigger the fetch request, we start the request for the slow data as soon as the user starts the transition to the new route. This can significantly speed up the user experience for slower networks
-5. redux - explain using useContext as comparison
-6. .env file for api key
-  - don't check secret key into github
-    - how to remove from github history
-  - does it actually affect request in any meaningful way for hacking?
-    - no - would have to keep on server, it just helps you not commit secrets to github repo
+4. ssr?
 
 - state / lifecycle / hooks
   - https://reactjs.org/docs/hooks-reference.html
@@ -82,14 +81,13 @@
     - x - first make simple counter project
     - x - then do modal for more info on main video
   - x - useEffect - data
+  - x - useRef
   - useContext - data?
-  - useReducer
+  - custom hook
   - useCallback
   - useMemo
-  - useRef
-  - custom hook
-- debug chrome devtool
-  - react site? - shows tree
+  - useReducer
+- x - react dev tools
 
 - why react
   - virtual dom
@@ -102,7 +100,3 @@
   - code organization - easier to debug
   - easy transition to react native / flutter as well if you want to make multi-platform mobile apps (would be harder to learn swift and have to learn a lang for android as well)
   - easy to do SPA (less reqs to server)
-
-
-
-make header background image responsive
