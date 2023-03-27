@@ -15,11 +15,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Navigate replace to="browse" />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/browse",
     element: <App />,
-    errorElement: <ErrorPage />,
     children: [
       { path: "", element: <Home /> },
       {
