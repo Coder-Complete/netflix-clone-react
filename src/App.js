@@ -1,15 +1,19 @@
 import "./style.css";
 
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import Header from "./Header/Header.js";
 import Modal from "./Modal.js";
 import MovieRow from "./MovieRow.js";
 import { Outlet } from "react-router-dom";
+import { UserContext } from ".";
 
 const App = () => {
   const [openModal, setOpenModal] = useState(false);
   const [rowData, setRowData] = useState([]);
+
+  const { user } = useContext(UserContext);
+  console.log(user);
 
   useEffect(() => {
     let token =
@@ -30,13 +34,14 @@ const App = () => {
     Promise.all([promise1, promise2, promise3]).then((responses) => {
       let promises = responses.map((response) => response.json());
       Promise.all(promises).then((allData) => {
-        console.log(allData[0].items[0]);
+        // console.log(allData[0].items[0]);
         setRowData(allData);
       });
     });
   }, []);
   return (
     <div className="app">
+      <div className="user">{user}</div>
       <Header setOpenModal={setOpenModal} />
       <Outlet />
     </div>

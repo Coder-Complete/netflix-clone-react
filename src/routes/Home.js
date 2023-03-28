@@ -26,11 +26,12 @@ function Home() {
     Promise.all([promise1, promise2, promise3]).then((responses) => {
       let promises = responses.map((response) => response.json());
       Promise.all(promises).then((allData) => {
-        console.log(allData[0].items[0]);
+        // console.log(allData[0].items[0]);
         setRowData(allData);
       });
     });
   }, []);
+
   return (
     <main>
       {openModal ? <Modal setOpenModal={setOpenModal} /> : null}

@@ -30,7 +30,7 @@ function ProfileTooltip() {
         <ProfileTooltipRow leading={<BsPerson />} text="Account" />
         <ProfileTooltipRow leading={<BsQuestionCircle />} text="Help Center" />
       </div>
-      <div class="profile-tooltip__sign-out">
+      <div className="profile-tooltip__sign-out">
         <p>Sign out of Netflix</p>
       </div>
     </div>

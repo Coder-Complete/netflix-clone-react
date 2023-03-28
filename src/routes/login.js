@@ -1,7 +1,8 @@
 import "./login.css";
 
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
+import { UserContext } from "..";
 import { redirect } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -9,6 +10,8 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState({});
+
+  const { setUser } = useContext(UserContext);
 
   const navigate = useNavigate();
 
@@ -18,6 +21,7 @@ function Login() {
 
   function signIn() {
     if (validate()) {
+      setUser("lskdjfkds");
       navigate("../browse", { replace: true });
     }
   }
@@ -34,7 +38,7 @@ function Login() {
       <div className="sign-in-container">
         <h2>Sign In</h2>
         <form action="" onSubmit={signIn}>
-          <label htmlFor="">
+          <label>
             Email or phone number
             <input
               type="email"
@@ -42,7 +46,7 @@ function Login() {
               onChange={(e) => setEmail(e.target.value)}
             />
           </label>
-          <label htmlFor="">
+          <label>
             Password
             <input
               type="password"

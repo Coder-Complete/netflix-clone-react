@@ -5,11 +5,11 @@ function TestOutUseEffect() {
   const [countTwo, setCountTwo] = useState(0);
 
   useEffect(() => {
-    console.log("ran useeffect");
+    // console.log("ran useeffect");
   }, [countTwo]);
 
   useEffect(() => {
-    console.log("count useeffect ran");
+    // console.log("count useeffect ran");
   }, [count]);
 
   return (
