@@ -1,11 +1,12 @@
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./src/App.js";
+import Home from "./Home.js";
 // import Home from "./src/routes/Home.js";
-import Root from "./src/routes/Root.js";
-import MyList from "./src/routes/MyList.js";
-import ErrorPage from "./src/routes/ErrorPage.js";
+import Root from "./routes/Root.js";
+import MyList from "./routes/MyList.js";
+import ErrorPage from "./routes/ErrorPage.js";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
           {
             index: true,
             // path: "browse",
-            element: <App />,
+            element: <Home />,
           },
           {
             path: "browse/my-list",

@@ -4,41 +4,84 @@ import { IoSearch } from "react-icons/io5";
 import { GiCardExchange } from "react-icons/gi";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import avatarPhoto from "./assets/netflix-avatar.png";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
 function Nav() {
   return (
-    <div className="header__top-row">
+    <div className="nav">
       <div className="header__top-row__left">
         <NavLink to={"/"}>
-          <h1 className="red">Netflix</h1>
+          <h1 className="red" style={{ marginRight: "20px" }}>
+            Netflix
+          </h1>
         </NavLink>
         <div className="tooltip-wrapper">
-          <NavLink
-            to={"/"}
-            className={({ isActive }) =>
-              isActive ? "nav-link active" : "nav-link"
-            }
-          >
+          <NavLink to={"/"} className="white">
             Browse
-          </NavLink>
-          <NavLink
-            to={"/browse/my-list"}
-            className={({ isActive }) =>
-              isActive ? "nav-link active" : "nav-link"
-            }
-          >
-            My List
           </NavLink>
           <div className="tooltip browse">
             <ul>
-              <li className="browse-list-item">Home</li>
-              <li className="browse-list-item">TV Shows</li>
-              <li className="browse-list-item">Movies</li>
-              <li className="browse-list-item">New & Popular</li>
-              <li className="browse-list-item">My List</li>
-              <li className="browse-list-item">Browse by Languages</li>
+              <li className="browse-list-item">
+                <NavLink
+                  to={"/"}
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li className="browse-list-item">
+                <NavLink
+                  to={"/browse/genre/83"}
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  TV Shows
+                </NavLink>
+              </li>
+              <li className="browse-list-item">
+                <NavLink
+                  to={"/browse/genre/34399"}
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  Movies
+                </NavLink>
+              </li>
+              <li className="browse-list-item">
+                <NavLink
+                  to={"/latest"}
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  New & Popular
+                </NavLink>
+              </li>
+              <li className="browse-list-item">
+                <NavLink
+                  to={"/browse/my-list"}
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  My List
+                </NavLink>
+              </li>
+              <li className="browse-list-item">
+                <NavLink
+                  to={"/browse/original-audio"}
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  Browse by Languages
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>

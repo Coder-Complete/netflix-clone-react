@@ -1,5 +1,4 @@
 .header {
-  padding: 5px 20px;
   background-image: url("http://occ-0-1413-1412.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABZRzrdrgF5Z59V8FJFAzWG-s7kX-OqTS1dnLAIch8Sm2ySruAH88YefXwgrUwEiQItFNPAh0Dz3rYhGThz1X3DGAuhq8wSCTXQgP.jpg?r=4a0");
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,6 +29,7 @@
 }
 
 .header-main__left-section {
+  padding: 20px;
   width: 40%;
 }
 

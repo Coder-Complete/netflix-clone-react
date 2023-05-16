@@ -1,4 +1,4 @@
-import "./App.css";
+import "./Home.css";
 
 import React, { useEffect, useState } from "react";
 
@@ -9,7 +9,7 @@ import MovieModal from "./MovieModal.js";
 import MovieRow from "./MovieRow.js";
 import Nav from "./Nav";
 
-const App = () => {
+const Home = () => {
   const [openModal, setOpenModal] = useState(false);
   const [rowData, setRowData] = useState([]);
   const [movieModalData, setMovieModalData] = useState({});
@@ -105,4 +105,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
