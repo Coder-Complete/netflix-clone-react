@@ -7,6 +7,7 @@ import Header from "./Header.js";
 import Modal from "./Modal.js";
 import MovieModal from "./MovieModal.js";
 import MovieRow from "./MovieRow.js";
+import Nav from "./Nav";
 
 const App = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -77,30 +78,30 @@ const App = () => {
   }
 
   return (
-    <div className="app">
+    <>
       <Header setOpenModal={setOpenModal} />
-      <main>
-        <MovieModal
-          data={movieModalData}
-          setMovieModalData={setMovieModalData}
-          position={movieModalPosition}
-          genres={genres}
-        />
-        {openModal && <Modal setOpenModal={setOpenModal} />}
-        {rowData.map((rowDataObject, index) =>
-          rowDataObject.items.length ? (
-            <MovieRow
-              key={rowDataObject.id}
-              index={index}
-              data={rowDataObject}
-              setMovieModalData={setMovieModalData}
-              setMovieModalPosition={setMovieModalPosition}
-            />
-          ) : null
-        )}
-      </main>
-      <BottomScrollListener onBottom={fetchData} debounce={1000} />
-    </div>
+      <MovieModal
+        data={movieModalData}
+        setMovieModalData={setMovieModalData}
+        position={movieModalPosition}
+        genres={genres}
+      />
+      {openModal && <Modal setOpenModal={setOpenModal} />}
+      {rowData.map((rowDataObject, index) =>
+        rowDataObject.items.length ? (
+          <MovieRow
+            key={rowDataObject.id}
+            index={index}
+            data={rowDataObject}
+            setMovieModalData={setMovieModalData}
+            setMovieModalPosition={setMovieModalPosition}
+          />
+        ) : null
+      )}
+    </>
+    //   </main>
+    //   <BottomScrollListener onBottom={fetchData} debounce={1000} />
+    // </div>
   );
 };
 
