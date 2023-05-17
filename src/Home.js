@@ -98,10 +98,8 @@ const Home = () => {
           />
         ) : null
       )}
+      <BottomScrollListener onBottom={fetchData} debounce={1000} />
     </>
-    //   </main>
-    //   <BottomScrollListener onBottom={fetchData} debounce={1000} />
-    // </div>
   );
 };
 
