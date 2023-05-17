@@ -9,6 +9,7 @@
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://netflix-clone-react-codercomplete.vercel.app/",
   "dependencies": {
     "react": "^18.2.0",
     "react-bottom-scroll-listener": "^5.1.0",
