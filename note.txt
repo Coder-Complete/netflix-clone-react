@@ -12,8 +12,8 @@
 - x - make a layout
   - x - first put all html in <App/>
   - x - then separate out into components (with props)
-  - then make interactive (with state, etc)
-    - netflix - my list
+  - x - then make interactive (with state, etc)
+    - x - netflix - my list
 - x - props
 
 0. add in setup stuff more info based on notes taken for t.b. regarding css and imgs and public folder etc
@@ -58,22 +58,29 @@
   3. deployment (best way to deploy react app w/ no backend)
 
 Advanced react
-1. more hooks
+1. react router (maybe)
+  - loaders - replace useEffect for data
+  - forms/actions - first make sure i've demo'd forms, then replace w/ forms/actions
+  - deferred for loading states - first make sure i've demo'd ternary loading states, then replace w/ deferred
+    - https://reactrouter.com/en/main/guides/deferred
+      - rather than waiting for the component before we can trigger the fetch request, we start the request for the slow data as soon as the user starts the transition to the new route. This can significantly speed up the user experience for slower networks
+2. more hooks
   - preface these with that useState and useEffect are pretty much all you really need, rest is either making code easier to manage or optimizing rendering
     - useContext & redux
     - custom hooks
     - useMemo - prbly wont use
     - useCallback - prbly wont use
     - useReducer - can eventually refactor complex state if happens
-2. code splitting, react suspense, and lazy loading
+3. "last notes" code splitting, react suspense, and lazy loading
+  - try to build out netflix app more 
+    - my-list - favorite a movie and see it on my-list page
+    - tv shows page w/ loader - find best api request in tmdb api
   - ternary loading state for data (movies)
-3. react router (maybe)
-  - loaders - replace useEffect for data
-  - forms/actions - first make sure i've demo'd forms, then replace w/ forms/actions
-  - deferred for loading states - first make sure i've demo'd ternary loading states, then replace w/ deferred
-    - https://reactrouter.com/en/main/guides/deferred
-      - rather than waiting for the component before we can trigger the fetch request, we start the request for the slow data as soon as the user starts the transition to the new route. This can significantly speed up the user experience for slower networks
-4. ssr?
+  - suspense
+    - https://www.pluralsight.com/blog/software-development/suspense-react-18-explained
+    - https://blog.bitsrc.io/4-best-ways-to-use-reacts-suspense-component-17b7e7788908
+  - code splitting - https://legacy.reactjs.org/docs/code-splitting.html
+4. ssr? (introduce?)
 
 - state / lifecycle / hooks
   - https://reactjs.org/docs/hooks-reference.html
@@ -84,8 +91,8 @@ Advanced react
   - x - useRef
   - useContext - data?
   - custom hook
-  - useCallback
   - useMemo
+  - useCallback
   - useReducer
 - x - react dev tools
 

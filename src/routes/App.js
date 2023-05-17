@@ -1,12 +1,10 @@
-import "./App.css";
-
 import React, { useEffect, useState } from "react";
 
 import { BottomScrollListener } from "react-bottom-scroll-listener";
-import Header from "./Header.js";
-import Modal from "./Modal.js";
-import MovieModal from "./MovieModal.js";
-import MovieRow from "./MovieRow.js";
+import Header from "../Header.js";
+import Modal from "../Modal.js";
+import MovieModal from "../MovieModal.js";
+import MovieRow from "../MovieRow.js";
 
 const App = () => {
   const [openModal, setOpenModal] = useState(false);
