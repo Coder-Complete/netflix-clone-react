@@ -5,6 +5,10 @@ Last vids
     - tv shows page w/ loader - find best api request in tmdb api
   - dotenv - https://www.npmjs.com/package/dotenv-webpack
   - deploy
+    - vercel - easy to set up
+    - had to specify output dir
+    - had to add env var
+    - bypass chrome warning
 
 - last notes
   - ternary loading state for data (movies)

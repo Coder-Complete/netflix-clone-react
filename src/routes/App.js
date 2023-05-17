@@ -38,6 +38,7 @@ const App = () => {
 
   function fetchData() {
     let token = process.env.API_TOKEN;
+    console.log(token);
     let options = {
       method: "GET",
       headers: {
